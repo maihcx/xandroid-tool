@@ -21,25 +21,39 @@
     </Page.Resources>
 
     <StackPanel>
+
         <TextBlock
             FontSize="20"
             FontWeight="Medium"
             Text="Personalization" />
-        <TextBlock Margin="0,12,0,0" Text="Theme" />
+                
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,10,0,0">
+            <TextBlock Text="Theme" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <ComboBox Margin="20,0,0,0" Name="cbbThemes" SelectionChanged="cbbThemes_SelectionChanged">
+                <ComboBoxItem Content="Auto" />
+                <ComboBoxItem Content="Light" />
+                <ComboBoxItem Content="Dark" />
+            </ComboBox>
+        </StackPanel>
+
+        <RadioButton
+            Margin="0,12,0,0"
+            Command="{Binding ViewModel.ChangeThemeCommand, Mode=OneWay}"
+            CommandParameter="theme_auto"
+            Content="Auto"
+            GroupName="themeSelect" />
         <RadioButton
             Margin="0,12,0,0"
             Command="{Binding ViewModel.ChangeThemeCommand, Mode=OneWay}"
             CommandParameter="theme_light"
             Content="Light"
-            GroupName="themeSelect"
-            IsChecked="{Binding ViewModel.CurrentTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Light, Mode=OneWay}" />
+            GroupName="themeSelect" />
         <RadioButton
             Margin="0,8,0,0"
             Command="{Binding ViewModel.ChangeThemeCommand, Mode=OneWay}"
             CommandParameter="theme_dark"
             Content="Dark"
-            GroupName="themeSelect"
-            IsChecked="{Binding ViewModel.CurrentTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark, Mode=OneWay}" />
+            GroupName="themeSelect" />
 
         <TextBlock Margin="0,12,0,0" Text="Material" />
         <RadioButton
@@ -47,15 +61,13 @@
             Command="{Binding ViewModel.ChangeMaterialCommand, Mode=OneWay}"
             CommandParameter="material_mica"
             Content="Mica"
-            GroupName="materialSelect"
-            IsChecked="{Binding ViewModel.CurrentMaterial, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Mica, Mode=OneWay}" />
+            GroupName="materialSelect" />
         <RadioButton
             Margin="0,8,0,0"
             Command="{Binding ViewModel.ChangeMaterialCommand, Mode=OneWay}"
             CommandParameter="material_acrylic"
             Content="Acrylic"
-            GroupName="materialSelect"
-            IsChecked="{Binding ViewModel.CurrentMaterial, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Acrylic, Mode=OneWay}" />
+            GroupName="materialSelect" />
 
         <TextBlock
             Margin="0,24,0,0"

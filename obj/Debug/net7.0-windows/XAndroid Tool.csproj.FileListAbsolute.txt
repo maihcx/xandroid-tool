@@ -56,3 +56,5 @@ D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\refint\XAndroid Tool.dll
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.pdb
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.genruntimeconfig.cache
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\ref\XAndroid Tool.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\XAndroid Tool.dll.config
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.sourcelink.json

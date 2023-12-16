@@ -5,6 +5,7 @@
 
 using System.Globalization;
 using System.Windows.Data;
+using static XAndroid_Tool.Resources.ThemeConfigs;
 
 namespace XAndroid_Tool.Helpers
 {
@@ -23,17 +24,17 @@ namespace XAndroid_Tool.Helpers
             //    throw new ArgumentException("ExceptionEnumToBooleanConverterValueMustBeAnEnum");
             //}
 
-            object enumValue;
-            if (value is Wpf.Ui.Appearance.ThemeType)
-            {
-                enumValue = Enum.Parse(typeof(Wpf.Ui.Appearance.ThemeType), enumString);
-                return enumValue.Equals(value);
-            }
-            else if (value is Wpf.Ui.Controls.WindowBackdropType)
-            {
-                enumValue = Enum.Parse(typeof(Wpf.Ui.Controls.WindowBackdropType), enumString);
-                return enumValue.Equals(value);
-            }
+            //object enumValue;
+            //if (value is IThemeType)
+            //{
+            //    enumValue = Enum.Parse(typeof(IThemeType), enumString);
+            //    return enumValue.Equals(value);
+            //}
+            //else if (value is Wpf.Ui.Controls.WindowBackdropType)
+            //{
+            //    enumValue = Enum.Parse(typeof(Wpf.Ui.Controls.WindowBackdropType), enumString);
+            //    return enumValue.Equals(value);
+            //}
 
             return false;
         }

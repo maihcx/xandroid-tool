@@ -5,6 +5,7 @@
 
 using Wpf.Ui.Controls;
 using XAndroid_Tool.Resources;
+using XAndroid_Tool.Services;
 using XAndroid_Tool.ViewModels.Windows;
 
 namespace XAndroid_Tool.Views.Windows
@@ -12,6 +13,8 @@ namespace XAndroid_Tool.Views.Windows
     public partial class MainWindow
     {
         public MainWindowViewModel ViewModel { get; }
+
+        public ApplicationThemeManagerService ThemeManagerService { get; }
 
         public MainWindow(
             MainWindowViewModel viewModel,
@@ -21,10 +24,13 @@ namespace XAndroid_Tool.Views.Windows
             IContentDialogService contentDialogService
         )
         {
-            Wpf.Ui.Appearance.Watcher.Watch(this, ThemeConfigs.WindowBackdropDefault, true);
+            SharedVariable.MainWindow = this;
+            //Wpf.Ui.Appearance.Watcher.Watch(this, ThemeConfigs.WindowBackdropDefault, true);
 
 
             ViewModel = viewModel;
+            ThemeManagerService = new ApplicationThemeManagerService();
+            SharedVariable.ThemeManagerService = ThemeManagerService;
             DataContext = this;
 
             InitializeComponent();
@@ -40,8 +46,12 @@ namespace XAndroid_Tool.Views.Windows
 
         private void OnSourceInitialized(object? sender, EventArgs e)
         {
-            Wpf.Ui.Appearance.Theme.Apply(Wpf.Ui.Appearance.ThemeType.Dark, ThemeConfigs.WindowBackdropDefault, true);
+            Wpf.Ui.Appearance.Theme.Apply(ThemeManagerService.GetSysApplicationTheme(), ThemeManagerService.GetBackdropType(), true);
 
+            //ThemeManagerService.OnThemeChanged += (theme) =>
+            //{
+            //    Wpf.Ui.Appearance.Theme.Apply(theme, ThemeManagerService.GetBackdropType(), true);
+            //};
         }
     }
 }

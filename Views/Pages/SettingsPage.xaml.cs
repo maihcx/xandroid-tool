@@ -3,7 +3,10 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 
+using System.Windows.Controls;
 using Wpf.Ui.Controls;
+using XAndroid_Tool.Resources;
+using XAndroid_Tool.Services;
 using XAndroid_Tool.ViewModels.Pages;
 
 namespace XAndroid_Tool.Views.Pages
@@ -12,12 +15,22 @@ namespace XAndroid_Tool.Views.Pages
     {
         public SettingsViewModel ViewModel { get; }
 
+        private ApplicationThemeManagerService ThemeManagerService = SharedVariable.ThemeManagerService;
+
         public SettingsPage(SettingsViewModel viewModel)
         {
             ViewModel = viewModel;
             DataContext = this;
 
             InitializeComponent();
+
+            //cbbThemes.SelectedIndex = (int)ThemeManagerService.GetApplicationTheme();
+        }
+
+        private void cbbThemes_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            string themeTake = ((ComboBoxItem)((ComboBox)sender).SelectedItem).Content.ToString() ?? "Auto";
+            ViewModel.OnChangeTheme(themeTake);
         }
     }
 }

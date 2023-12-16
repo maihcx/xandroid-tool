@@ -3,8 +3,11 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 
+using System.Windows.Data;
 using Wpf.Ui.Controls;
 using XAndroid_Tool.Resources;
+using XAndroid_Tool.Services;
+using static XAndroid_Tool.Resources.ThemeConfigs;
 
 namespace XAndroid_Tool.ViewModels.Pages
 {
@@ -12,14 +15,19 @@ namespace XAndroid_Tool.ViewModels.Pages
     {
         private bool _isInitialized = false;
 
+        private ApplicationThemeManagerService ThemeManagerService = SharedVariable.ThemeManagerService;
+
         [ObservableProperty]
         private string _appVersion = String.Empty;
 
         [ObservableProperty]
-        private Wpf.Ui.Appearance.ThemeType _currentTheme = Wpf.Ui.Appearance.ThemeType.Unknown;
+        private IThemeType _currentTheme = IThemeType.Auto;
 
         [ObservableProperty]
         private Wpf.Ui.Controls.WindowBackdropType _currentMaterial = ThemeConfigs.WindowBackdropDefault;
+
+        [ObservableProperty]
+        private CollectionView _themeList;
 
         public void OnNavigatedTo()
         {
@@ -31,10 +39,15 @@ namespace XAndroid_Tool.ViewModels.Pages
 
         private void InitializeViewModel()
         {
-            CurrentTheme = Wpf.Ui.Appearance.Theme.GetAppTheme();
+            CurrentTheme = ThemeManagerService.GetApplicationTheme();
             AppVersion = $"XAndroid Tool - {GetAssemblyVersion()}";
 
             _isInitialized = true;
+
+            ThemeManagerService.OnThemeChanged += (theme) =>
+            {
+                CurrentTheme = ThemeManagerService.GetApplicationTheme();
+            };
         }
 
         private string GetAssemblyVersion()
@@ -44,26 +57,20 @@ namespace XAndroid_Tool.ViewModels.Pages
         }
 
         [RelayCommand]
-        private void OnChangeTheme(string parameter)
+        public void OnChangeTheme(string parameter)
         {
             switch (parameter)
             {
-                case "theme_light":
-                    if (CurrentTheme == Wpf.Ui.Appearance.ThemeType.Light)
-                        break;
-
-                    Wpf.Ui.Appearance.Theme.Apply(Wpf.Ui.Appearance.ThemeType.Light, ThemeConfigs.WindowBackdropDefault, true);
-                    CurrentTheme = Wpf.Ui.Appearance.ThemeType.Light;
-
+                case "Auto":
+                    ThemeManagerService.SetApplicationTheme(ThemeConfigs.IThemeType.Auto);
                     break;
 
-                default:
-                    if (CurrentTheme == Wpf.Ui.Appearance.ThemeType.Dark)
-                        break;
+                case "Light":
+                    ThemeManagerService.SetApplicationTheme(ThemeConfigs.IThemeType.Light);
+                    break;
 
-                    Wpf.Ui.Appearance.Theme.Apply(Wpf.Ui.Appearance.ThemeType.Dark, ThemeConfigs.WindowBackdropDefault, true);
-                    CurrentTheme = Wpf.Ui.Appearance.ThemeType.Dark;
-
+                case "Dark":
+                    ThemeManagerService.SetApplicationTheme(ThemeConfigs.IThemeType.Dark);
                     break;
             }
         }
@@ -79,7 +86,7 @@ namespace XAndroid_Tool.ViewModels.Pages
                         break;
 
                     CurrentMaterial = Wpf.Ui.Controls.WindowBackdropType.Mica;
-                    Wpf.Ui.Appearance.Theme.Apply(CurrentTheme, CurrentMaterial, true);
+                    ThemeManagerService.SetBackdropType(CurrentMaterial);
 
                     break;
 
@@ -88,7 +95,7 @@ namespace XAndroid_Tool.ViewModels.Pages
                         break;
 
                     CurrentMaterial = Wpf.Ui.Controls.WindowBackdropType.Acrylic;
-                    Wpf.Ui.Appearance.Theme.Apply(CurrentTheme, CurrentMaterial, true);
+                    ThemeManagerService.SetBackdropType(CurrentMaterial);
 
                     break;
             }
