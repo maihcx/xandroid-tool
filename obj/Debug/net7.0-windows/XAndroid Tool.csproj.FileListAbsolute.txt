@@ -1,0 +1,58 @@
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\XAndroid Tool.exe
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\XAndroid Tool.deps.json
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\XAndroid Tool.runtimeconfig.json
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\XAndroid Tool.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\XAndroid Tool.pdb
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\CommunityToolkit.Mvvm.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.CommandLine.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Hosting.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Configuration.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Console.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Debug.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.EventLog.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.EventSource.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Wpf.Ui.dll
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.csproj.AssemblyReference.cache
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\App.baml
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\DashboardPage.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\DataPage.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\SettingsPage.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Windows\MainWindow.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\App.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool_Content.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool_MarkupCompile.cache
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool_MarkupCompile.lref
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\DashboardPage.baml
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\DataPage.baml
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\SettingsPage.baml
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Windows\MainWindow.baml
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.g.resources
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.AssemblyInfoInputs.cache
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.AssemblyInfo.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.csproj.CoreCompileInputs.cache
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.csproj.CopyComplete
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.dll
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\refint\XAndroid Tool.dll
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.pdb
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.genruntimeconfig.cache
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\ref\XAndroid Tool.dll
