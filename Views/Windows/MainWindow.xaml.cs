@@ -25,8 +25,6 @@ namespace XAndroid_Tool.Views.Windows
         )
         {
             SharedVariable.MainWindow = this;
-            //Wpf.Ui.Appearance.Watcher.Watch(this, ThemeConfigs.WindowBackdropDefault, true);
-
 
             ViewModel = viewModel;
             ThemeManagerService = new ApplicationThemeManagerService();
@@ -52,6 +50,11 @@ namespace XAndroid_Tool.Views.Windows
             //{
             //    Wpf.Ui.Appearance.Theme.Apply(theme, ThemeManagerService.GetBackdropType(), true);
             //};
+        }
+
+        private void NavigationView_Navigated(NavigationView sender, NavigatedEventArgs args)
+        {
+            btnNavigationPrevious.IsEnabled = NavigationView.CanGoBack;
         }
     }
 }

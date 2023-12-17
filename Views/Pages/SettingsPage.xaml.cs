@@ -24,13 +24,23 @@ namespace XAndroid_Tool.Views.Pages
 
             InitializeComponent();
 
-            //cbbThemes.SelectedIndex = (int)ThemeManagerService.GetApplicationTheme();
+            cbbThemes.SelectedIndex = (int)ThemeManagerService.GetApplicationTheme();
+            cbbThemes.SelectionChanged += cbbThemes_SelectionChanged;
+
+            cbbMaterial.SelectedIndex = (int)ThemeManagerService.GetBackdropType();
+            cbbMaterial.SelectionChanged += cbbMaterial_SelectionChanged;
         }
 
         private void cbbThemes_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             string themeTake = ((ComboBoxItem)((ComboBox)sender).SelectedItem).Content.ToString() ?? "Auto";
             ViewModel.OnChangeTheme(themeTake);
+        }
+
+        private void cbbMaterial_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string materialTake = ((ComboBoxItem)((ComboBox)sender).SelectedItem).Content.ToString() ?? "Mica";
+            ViewModel.OnChangeMaterial(materialTake);
         }
     }
 }

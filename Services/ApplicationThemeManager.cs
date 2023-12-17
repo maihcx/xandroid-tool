@@ -47,7 +47,7 @@ namespace XAndroid_Tool.Services
         {
             UserDataStored.SetValue("IWindowBackdropType", _WindowBackdropType.ToString());
 
-
+            Wpf.Ui.Appearance.Theme.Apply(GetSysApplicationTheme(), _WindowBackdropType, true);
         }
 
         public IThemeType GetApplicationTheme()
@@ -91,27 +91,13 @@ namespace XAndroid_Tool.Services
             string valS = _IThemeType.ToString();
             if (_IThemeType == IThemeType.Auto)
             {
-
-                OnThemeChanged(this.GetSysApplicationTheme());
-                //Theme_Changed(this.GetSysApplicationTheme(), System.Windows.Media.Color.FromRgb(0, 0, 0));
                 Wpf.Ui.Appearance.Watcher.Watch(SharedVariable.MainWindow, GetBackdropType(), true);
-                //Theme.Changed += Theme_Changed;
             }
             else
             {
-                Theme.Changed -= Theme_Changed;
-                OnThemeChanged(this.GetSysApplicationTheme());
-                Theme_Changed(this.GetSysApplicationTheme(), System.Windows.Media.Color.FromRgb(0,0,0));
+                Wpf.Ui.Appearance.Theme.Apply(GetSysApplicationTheme(), GetBackdropType(), true);
             }
-        }
-
-        private void Theme_Changed(ThemeType currentTheme, System.Windows.Media.Color systemAccent)
-        {
-            if (OnThemeChanged != null)
-            {
-                OnThemeChanged(currentTheme);
-            }
-            Wpf.Ui.Appearance.Theme.Apply(currentTheme, GetBackdropType(), true);
+            OnThemeChanged?.Invoke(this.GetSysApplicationTheme());
         }
     }
 }

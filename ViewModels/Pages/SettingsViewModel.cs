@@ -24,7 +24,7 @@ namespace XAndroid_Tool.ViewModels.Pages
         private IThemeType _currentTheme = IThemeType.Auto;
 
         [ObservableProperty]
-        private Wpf.Ui.Controls.WindowBackdropType _currentMaterial = ThemeConfigs.WindowBackdropDefault;
+        private Wpf.Ui.Controls.WindowBackdropType _currentMaterial = WindowBackdropType.Mica;
 
         [ObservableProperty]
         private CollectionView _themeList;
@@ -40,6 +40,7 @@ namespace XAndroid_Tool.ViewModels.Pages
         private void InitializeViewModel()
         {
             CurrentTheme = ThemeManagerService.GetApplicationTheme();
+            CurrentMaterial = ThemeManagerService.GetBackdropType();
             AppVersion = $"XAndroid Tool - {GetAssemblyVersion()}";
 
             _isInitialized = true;
@@ -77,30 +78,18 @@ namespace XAndroid_Tool.ViewModels.Pages
 
 
         [RelayCommand]
-        private void OnChangeMaterial(string parameter)
+        public void OnChangeMaterial(string parameter)
         {
-            switch (parameter)
-            {
-                case "material_mica":
-                    if (CurrentMaterial == WindowBackdropType.Mica)
-                        break;
+            WindowBackdropType valueParsed = (WindowBackdropType)Enum.Parse(
+                typeof(WindowBackdropType),
+                parameter
+            );
 
-                    CurrentMaterial = Wpf.Ui.Controls.WindowBackdropType.Mica;
-                    ThemeManagerService.SetBackdropType(CurrentMaterial);
+            if (valueParsed == CurrentMaterial) { return; }
 
-                    break;
-
-                case "material_acrylic":
-                    if (CurrentMaterial == WindowBackdropType.Acrylic)
-                        break;
-
-                    CurrentMaterial = Wpf.Ui.Controls.WindowBackdropType.Acrylic;
-                    ThemeManagerService.SetBackdropType(CurrentMaterial);
-
-                    break;
-            }
-
-            ThemeConfigs.WindowBackdropDefault = CurrentMaterial;
+            CurrentMaterial = valueParsed;
+            ThemeManagerService.SetBackdropType(CurrentMaterial);
+            //ThemeConfigs.WindowBackdropDefault = CurrentMaterial;
         }
     }
 }
