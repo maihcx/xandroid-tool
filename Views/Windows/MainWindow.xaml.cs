@@ -6,11 +6,12 @@
 using Wpf.Ui.Controls;
 using XAndroid_Tool.Resources;
 using XAndroid_Tool.Services;
+using XAndroid_Tool.Services.Contracts;
 using XAndroid_Tool.ViewModels.Windows;
 
 namespace XAndroid_Tool.Views.Windows
 {
-    public partial class MainWindow
+    public partial class MainWindow : IWindow
     {
         public MainWindowViewModel ViewModel { get; }
 
@@ -50,11 +51,6 @@ namespace XAndroid_Tool.Views.Windows
             //{
             //    Wpf.Ui.Appearance.Theme.Apply(theme, ThemeManagerService.GetBackdropType(), true);
             //};
-        }
-
-        private void NavigationView_Navigated(NavigationView sender, NavigatedEventArgs args)
-        {
-            btnNavigationPrevious.IsEnabled = NavigationView.CanGoBack;
         }
     }
 }

@@ -1,0 +1,20 @@
+﻿XAndroid Tool
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\DEV\XAndroid_Tool\obj\Release\net7.0-windows\
+XAndroid_Tool
+none
+false
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP
+D:\DEV\XAndroid_Tool\App.xaml
+5569478974
+1282391436
+27-1136407497
+226-1655960422
+Controls\GalleryNavigationPresenter.xaml;Views\Pages\DashboardPage.xaml;Views\Pages\OverlayToolPage.xaml;Views\Pages\SettingsPage.xaml;Views\Windows\MainWindow.xaml;
+
+False
+

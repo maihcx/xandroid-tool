@@ -7,10 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Views\Pages\DashboardPage.xaml">
+    <Compile Update="Views\Pages\AndroidTools\AndroidToolsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\AndroidTools\OverlayToolPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\GalleryNavigationPresenter.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Pages\DataPage.xaml">
+    <Page Update="Controls\PageControlDocumentation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\AndroidTools\AndroidToolsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\AndroidTools\OverlayToolPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\DashboardPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Pages\SettingsPage.xaml">

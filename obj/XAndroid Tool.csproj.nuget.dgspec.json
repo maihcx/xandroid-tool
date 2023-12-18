@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\C# WPF\\XAndroid_Tool\\XAndroid Tool.csproj": {}
+    "D:\\DEV\\C#\\XAndroid Tool.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\C# WPF\\XAndroid_Tool\\XAndroid Tool.csproj": {
+    "D:\\DEV\\C#\\XAndroid Tool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\C# WPF\\XAndroid_Tool\\XAndroid Tool.csproj",
+        "projectUniqueName": "D:\\DEV\\C#\\XAndroid Tool.csproj",
         "projectName": "XAndroid Tool",
-        "projectPath": "D:\\Dev\\C# WPF\\XAndroid_Tool\\XAndroid Tool.csproj",
+        "projectPath": "D:\\DEV\\C#\\XAndroid Tool.csproj",
         "packagesPath": "C:\\Users\\huynh\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\C# WPF\\XAndroid_Tool\\obj\\",
+        "outputPath": "D:\\DEV\\C#\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\huynh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

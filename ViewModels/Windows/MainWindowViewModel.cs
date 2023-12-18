@@ -6,6 +6,8 @@
 using System.Collections.ObjectModel;
 using Wpf.Ui.Common;
 using Wpf.Ui.Controls;
+using XAndroid_Tool.Views.Pages;
+using XAndroid_Tool.Views.Pages.AndroidTools;
 
 namespace XAndroid_Tool.ViewModels.Windows
 {
@@ -17,29 +19,20 @@ namespace XAndroid_Tool.ViewModels.Windows
         [ObservableProperty]
         private ObservableCollection<object> _menuItems = new()
         {
-            new NavigationViewItem()
+            new NavigationViewItem("Home", SymbolRegular.Home24, typeof(DashboardPage)),
+            new NavigationViewItem("Android Tools", SymbolRegular.BoxToolbox24, typeof(AndroidToolsPage))
             {
-                Content = "Home",
-                Icon = new SymbolIcon { Symbol = SymbolRegular.Home24 },
-                TargetPageType = typeof(Views.Pages.DashboardPage)
-            },
-            new NavigationViewItem()
-            {
-                Content = "Data",
-                Icon = new SymbolIcon { Symbol = SymbolRegular.DataHistogram24 },
-                TargetPageType = typeof(Views.Pages.DataPage)
+                MenuItems = new object[]
+                {
+                    new NavigationViewItem("Overlay Tool", SymbolRegular.DeveloperBoardSearch20, typeof(OverlayToolPage)),
+                }
             }
         };
 
         [ObservableProperty]
         private ObservableCollection<object> _footerMenuItems = new()
         {
-            new NavigationViewItem()
-            {
-                Content = "Settings",
-                Icon = new SymbolIcon { Symbol = SymbolRegular.Settings24 },
-                TargetPageType = typeof(Views.Pages.SettingsPage)
-            }
+            new NavigationViewItem("Settings", SymbolRegular.Settings24, typeof(SettingsPage))
         };
 
         [ObservableProperty]

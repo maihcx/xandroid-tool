@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\
+D:\DEV\C#\obj\Debug\net7.0-windows\
 XAndroid_Tool
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\Dev\C# WPF\XAndroid_Tool\App.xaml
-4-1625266654
+D:\DEV\C#\App.xaml
+7-1144403347
 1282391436
-221207999132
+41999981101
 226-1655960422
-Views\Pages\DashboardPage.xaml;Views\Pages\DataPage.xaml;Views\Pages\SettingsPage.xaml;Views\Windows\MainWindow.xaml;
+Controls\GalleryNavigationPresenter.xaml;Controls\PageControlDocumentation.xaml;Views\Pages\AndroidTools\AndroidToolsPage.xaml;Views\Pages\AndroidTools\OverlayToolPage.xaml;Views\Pages\DashboardPage.xaml;Views\Pages\SettingsPage.xaml;Views\Windows\MainWindow.xaml;
 
 False
 
