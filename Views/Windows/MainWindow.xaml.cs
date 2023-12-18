@@ -41,6 +41,8 @@ namespace XAndroid_Tool.Views.Windows
             NavigationView.SetServiceProvider(serviceProvider);
 
             this.SourceInitialized += OnSourceInitialized;
+
+            ViewModel.OnNavigatedTo();
         }
 
         private void OnSourceInitialized(object? sender, EventArgs e)

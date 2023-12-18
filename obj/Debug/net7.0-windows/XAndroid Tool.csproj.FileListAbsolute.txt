@@ -33,7 +33,6 @@ D:\Dev\C# WPF\XAndroid_Tool\bin\Debug\net7.0-windows\Wpf.Ui.dll
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.csproj.AssemblyReference.cache
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\App.baml
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\DashboardPage.g.cs
-D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\DataPage.g.cs
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\SettingsPage.g.cs
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Windows\MainWindow.g.cs
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\App.g.cs
@@ -42,7 +41,6 @@ D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool_MarkupCompile.cache
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool_MarkupCompile.lref
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\DashboardPage.baml
-D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\DataPage.baml
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\SettingsPage.baml
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Windows\MainWindow.baml
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\XAndroid Tool.g.resources
@@ -186,3 +184,9 @@ D:\DEV\C#\obj\Debug\net7.0-windows\refint\XAndroid Tool.dll
 D:\DEV\C#\obj\Debug\net7.0-windows\XAndroid Tool.pdb
 D:\DEV\C#\obj\Debug\net7.0-windows\XAndroid Tool.genruntimeconfig.cache
 D:\DEV\C#\obj\Debug\net7.0-windows\ref\XAndroid Tool.dll
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\AndroidTools\AndroidToolsPage.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\AndroidTools\OverlayToolPage.g.cs
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Controls\GalleryNavigationPresenter.baml
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Controls\PageControlDocumentation.baml
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\AndroidTools\AndroidToolsPage.baml
+D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\AndroidTools\OverlayToolPage.baml

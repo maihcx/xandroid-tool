@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z01UnLjYmd0NnKlG/E6W55aqydAEUFke/ZPUmVTRBVWiV/bLe8gf6X4Y4OsGsQ1teFyt5ZHZLxUZCg4ffV/gZg==",
+  "dgSpecHash": "qz2fqiXla8rEd+HlX8L9uzxD+gMCdFsSJ8X4zfjaDQXOVM5+BTkTYqrOW7cz85BnVTWBjwi6ZGRLIB+jW8okvw==",
   "success": true,
-  "projectFilePath": "D:\\DEV\\C#\\XAndroid Tool.csproj",
+  "projectFilePath": "D:\\Dev\\C# WPF\\XAndroid_Tool\\XAndroid Tool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huynh\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\huynh\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

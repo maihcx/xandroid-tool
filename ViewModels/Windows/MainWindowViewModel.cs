@@ -6,6 +6,7 @@
 using System.Collections.ObjectModel;
 using Wpf.Ui.Common;
 using Wpf.Ui.Controls;
+using XAndroid_Tool.Services;
 using XAndroid_Tool.Views.Pages;
 using XAndroid_Tool.Views.Pages.AndroidTools;
 
@@ -13,6 +14,20 @@ namespace XAndroid_Tool.ViewModels.Windows
 {
     public partial class MainWindowViewModel : ObservableObject
     {
+        private bool _isInitialized = false;
+        public void OnNavigatedTo()
+        {
+            if (!_isInitialized)
+                InitializeViewModel();
+        }
+
+        private void InitializeViewModel()
+        {
+            _isInitialized = true;
+
+            //CommandService.CheckJavaAvailable();
+        }
+
         [ObservableProperty]
         private string _applicationTitle = "XAndroid Tool";
 
