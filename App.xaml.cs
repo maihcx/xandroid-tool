@@ -56,8 +56,8 @@ namespace XAndroid_Tool
                 services.AddSingleton<SettingsViewModel>();
 
                 // All other pages and view models
-                services.AddTransientFromNamespace("XAndroid_Tool.Views", GalleryAssembly.Asssembly);
-                services.AddTransientFromNamespace("XAndroid_Tool.ViewModels", GalleryAssembly.Asssembly);
+                services.AddTransientFromNamespace("XAndroid_Tool.Views", MainAssembly.Asssembly);
+                services.AddTransientFromNamespace("XAndroid_Tool.ViewModels", MainAssembly.Asssembly);
 
             }).Build();
 

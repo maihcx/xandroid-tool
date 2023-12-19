@@ -15,12 +15,6 @@ namespace XAndroid_Tool.ViewModels.Pages
     {
         private bool _isInitialized = false;
 
-        [ObservableProperty]
-        private IEnumerable<NavigationButton> _pageButtons;
-
-        [ObservableProperty]
-        private ICollection<NavigationCard> _navigationCards;
-
         public void OnNavigatedTo()
         {
             if (!_isInitialized)
@@ -45,16 +39,16 @@ namespace XAndroid_Tool.ViewModels.Pages
 
             //PageButtons = _PageButtons;
 
-            var _NavigationCards = new List<NavigationCard>();
-            _NavigationCards.Add(new NavigationCard {
-                Name = "Overlay Tool",
-                Icon = SymbolRegular.DeveloperBoardSearch20,
-                Description = "No Desc",
-                PageType = typeof(Views.Pages.AndroidTools.OverlayToolPage)
-            });
+            //var _NavigationCards = new List<NavigationCard>();
+            //_NavigationCards.Add(new NavigationCard {
+            //    Name = "Overlay Tool",
+            //    Icon = SymbolRegular.DeveloperBoardSearch20,
+            //    Description = "No Desc",
+            //    PageType = typeof(Views.Pages.AndroidTools.OverlayToolPage)
+            //});
 
 
-            NavigationCards = _NavigationCards;
+            //NavigationCards = _NavigationCards;
         }
 
     }

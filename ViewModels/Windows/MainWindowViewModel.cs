@@ -6,6 +6,8 @@
 using System.Collections.ObjectModel;
 using Wpf.Ui.Common;
 using Wpf.Ui.Controls;
+using XAndroid_Tool.Lib.ApkTool;
+using XAndroid_Tool.Lib.Java;
 using XAndroid_Tool.Services;
 using XAndroid_Tool.Views.Pages;
 using XAndroid_Tool.Views.Pages.AndroidTools;
@@ -21,11 +23,36 @@ namespace XAndroid_Tool.ViewModels.Windows
                 InitializeViewModel();
         }
 
-        private void InitializeViewModel()
+        private async void InitializeViewModel()
         {
             _isInitialized = true;
 
-            //CommandService.CheckJavaAvailable();
+            Func<Task> asyncVoid = async () =>
+            {
+                Apktool apktool = new Apktool(JavaUtils.GetJavaPath(), MainAssembly.APKTOOL_PATH);
+                string javaVersion = apktool.GetJavaVersion();
+                string apktoolVersion = apktool.GetVersion();
+                if (javaVersion == string.Empty)
+                {
+                    MessengerService.ShowSnackbar("Error", "Missing java, please install java 8 to continues", ControlAppearance.Danger, TimeSpan.FromSeconds(15));
+                }
+                else
+                {
+                    ControlAppearance controlAppearance = ControlAppearance.Success;
+                    if (apktoolVersion == string.Empty)
+                    {
+                        controlAppearance = ControlAppearance.Caution;
+                        apktoolVersion = "MISSING APKTOOL, PLEASE INSTALL APK TOOL!!!";
+                    }
+                    else
+                    {
+                        apktoolVersion = $"Version: {apktoolVersion}";
+                    }
+                    MessengerService.ShowSnackbar("System Info", $"JAVA:\n{javaVersion}\n\n APKTOOL:\n{apktoolVersion}", controlAppearance, TimeSpan.FromSeconds(15));
+                }
+            };
+
+            asyncVoid();
         }
 
         [ObservableProperty]

@@ -19,10 +19,4 @@
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     ScrollViewer.CanContentScroll="False"
     mc:Ignorable="d">
-
-
-    <controls:GalleryNavigationPresenter
-        Margin="0"
-        Padding="0"
-        ItemsSource="{Binding ViewModel.NavigationCards, Mode=OneWay}" />
 </Page>

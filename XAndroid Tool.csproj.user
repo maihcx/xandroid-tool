@@ -7,6 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Lib\ApkTool\ApkEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Lib\ApkTool\Apktool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Lib\Java\JarProcess.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="Views\Pages\AndroidTools\AndroidToolsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

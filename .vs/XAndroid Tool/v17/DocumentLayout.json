@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "D:\\DEV\\C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\xandroid tool.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:xandroid tool.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\viewmodels\\pages\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:viewmodels\\pages\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\viewmodels\\pages\\androidtools\\androidtoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:viewmodels\\pages\\androidtools\\androidtoolsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\viewmodels\\windows\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:viewmodels\\windows\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\controls\\gallerynavigationpresenter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:controls\\gallerynavigationpresenter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\lib\\java\\jarprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:lib\\java\\jarprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\views\\pages\\androidtools\\androidtoolspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:views\\pages\\androidtools\\androidtoolspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\views\\pages\\androidtools\\androidtoolspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:views\\pages\\androidtools\\androidtoolspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\services\\commandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:services\\commandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\views\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:views\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\services\\messengerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:services\\messengerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\resources\\sharedvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:resources\\sharedvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|d:\\dev\\c#\\views\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{183F3C6C-8C7C-4DFD-BD6F-922A5AD1CEE6}|XAndroid Tool.csproj|solutionrelative:views\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,63 +59,143 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "XAndroid Tool.csproj",
-              "DocumentMoniker": "D:\\DEV\\C#\\XAndroid Tool.csproj",
-              "RelativeDocumentMoniker": "XAndroid Tool.csproj",
-              "ToolTip": "D:\\DEV\\C#\\XAndroid Tool.csproj",
-              "RelativeToolTip": "XAndroid Tool.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2023-12-18T09:40:20.42Z",
+              "Title": "AndroidToolsViewModel.cs",
+              "DocumentMoniker": "D:\\DEV\\C#\\ViewModels\\Pages\\AndroidTools\\AndroidToolsViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Pages\\AndroidTools\\AndroidToolsViewModel.cs",
+              "ToolTip": "D:\\DEV\\C#\\ViewModels\\Pages\\AndroidTools\\AndroidToolsViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Pages\\AndroidTools\\AndroidToolsViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-19T06:45:12.951Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "AndroidToolsPage.xaml",
+              "DocumentMoniker": "D:\\DEV\\C#\\Views\\Pages\\AndroidTools\\AndroidToolsPage.xaml",
+              "RelativeDocumentMoniker": "Views\\Pages\\AndroidTools\\AndroidToolsPage.xaml",
+              "ToolTip": "D:\\DEV\\C#\\Views\\Pages\\AndroidTools\\AndroidToolsPage.xaml",
+              "RelativeToolTip": "Views\\Pages\\AndroidTools\\AndroidToolsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-19T06:43:25.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CommandService.cs",
+              "DocumentMoniker": "D:\\DEV\\C#\\Services\\CommandService.cs",
+              "RelativeDocumentMoniker": "Services\\CommandService.cs",
+              "ToolTip": "D:\\DEV\\C#\\Services\\CommandService.cs",
+              "RelativeToolTip": "Services\\CommandService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-19T04:44:52.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\DEV\\C#\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "D:\\DEV\\C#\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAD4vzcAAAAqAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAcwDsAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-18T09:16:59.322Z"
+              "WhenOpened": "2023-12-19T04:46:51.779Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "D:\\DEV\\C#\\ViewModels\\Windows\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\Windows\\MainWindowViewModel.cs",
               "ToolTip": "D:\\DEV\\C#\\ViewModels\\Windows\\MainWindowViewModel.cs",
               "RelativeToolTip": "ViewModels\\Windows\\MainWindowViewModel.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAARAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAADAAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-18T09:15:21.669Z"
+              "WhenOpened": "2023-12-19T01:32:53.445Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DashboardViewModel.cs",
-              "DocumentMoniker": "D:\\DEV\\C#\\ViewModels\\Pages\\DashboardViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\Pages\\DashboardViewModel.cs",
-              "ToolTip": "D:\\DEV\\C#\\ViewModels\\Pages\\DashboardViewModel.cs",
-              "RelativeToolTip": "ViewModels\\Pages\\DashboardViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
+              "DocumentIndex": 2,
+              "Title": "JarProcess.cs",
+              "DocumentMoniker": "D:\\DEV\\C#\\Lib\\Java\\JarProcess.cs",
+              "RelativeDocumentMoniker": "Lib\\Java\\JarProcess.cs",
+              "ToolTip": "D:\\DEV\\C#\\Lib\\Java\\JarProcess.cs",
+              "RelativeToolTip": "Lib\\Java\\JarProcess.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAGoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-18T09:13:51.813Z"
+              "WhenOpened": "2023-12-19T09:07:05.644Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GalleryNavigationPresenter.xaml.cs",
-              "DocumentMoniker": "D:\\DEV\\C#\\Controls\\GalleryNavigationPresenter.xaml.cs",
-              "RelativeDocumentMoniker": "Controls\\GalleryNavigationPresenter.xaml.cs",
-              "ToolTip": "D:\\DEV\\C#\\Controls\\GalleryNavigationPresenter.xaml.cs",
-              "RelativeToolTip": "Controls\\GalleryNavigationPresenter.xaml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAC8AAABnAAAA",
+              "DocumentIndex": 3,
+              "Title": "AndroidToolsPage.xaml.cs",
+              "DocumentMoniker": "D:\\DEV\\C#\\Views\\Pages\\AndroidTools\\AndroidToolsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Pages\\AndroidTools\\AndroidToolsPage.xaml.cs",
+              "ToolTip": "D:\\DEV\\C#\\Views\\Pages\\AndroidTools\\AndroidToolsPage.xaml.cs",
+              "RelativeToolTip": "Views\\Pages\\AndroidTools\\AndroidToolsPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-18T08:21:24.661Z"
+              "WhenOpened": "2023-12-19T06:46:13.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\DEV\\C#\\Views\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\DEV\\C#\\Views\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Views\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAswDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-19T02:05:24.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MessengerService.cs",
+              "DocumentMoniker": "D:\\DEV\\C#\\Services\\MessengerService.cs",
+              "RelativeDocumentMoniker": "Services\\MessengerService.cs",
+              "ToolTip": "D:\\DEV\\C#\\Services\\MessengerService.cs",
+              "RelativeToolTip": "Services\\MessengerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwB0AAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-19T01:59:14.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SharedVariable.cs",
+              "DocumentMoniker": "D:\\DEV\\C#\\Resources\\SharedVariable.cs",
+              "RelativeDocumentMoniker": "Resources\\SharedVariable.cs",
+              "ToolTip": "D:\\DEV\\C#\\Resources\\SharedVariable.cs",
+              "RelativeToolTip": "Resources\\SharedVariable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-19T02:00:56.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\DEV\\C#\\Views\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\Windows\\MainWindow.xaml",
+              "ToolTip": "D:\\DEV\\C#\\Views\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "Views\\Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-12-19T01:32:47.585Z",
+              "EditorCaption": ""
             }
           ]
         }

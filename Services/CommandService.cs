@@ -13,39 +13,55 @@ namespace XAndroid_Tool.Services
         {
             try
             {
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.FileName = "java.exe";
-                psi.Arguments = " -version";
-                psi.RedirectStandardError = true;
-                psi.UseShellExecute = false;
+                //ProcessStartInfo psi = new ProcessStartInfo();
+                //psi.WindowStyle = ProcessWindowStyle.Hidden;
+                //psi.CreateNoWindow = true;
+                //psi.FileName = "java.exe";
+                //psi.Arguments = " apktool";
+                //psi.RedirectStandardError = true;
+                //psi.UseShellExecute = false;
 
-                Process pr = Process.Start(psi);
-                string strOutput = pr.StandardError.ReadLine().Split(' ')[2].Replace("\"", "");
+                //Process proc = Process.Start(psi);
+                //string strOutput = proc.StandardError.ReadToEnd();
+                //proc.WaitForExit();
+
+                //CommandExecute("apktool");
+
+                return true;
             }
             catch
             {
-                return true;
+                return false;
             }
+        }
 
-            return false;
+        private static void JavaCommandExcute(string command)
+        {
+
         }
 
         private static string CommandExecute(string command)
         {
             string output = string.Empty;
-
-                System.Diagnostics.Process process = new System.Diagnostics.Process();
-                System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-                startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-                startInfo.UseShellExecute = false;
-                startInfo.RedirectStandardOutput = true;
-                startInfo.FileName = "cmd.exe";
-                startInfo.Arguments = $"/c {command}";
-                process.StartInfo = startInfo;
-                process.Start();
+            const string ipAddress = "127.0.0.1";
+            Process process = new Process
+            {
+                StartInfo =
+                {
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    CreateNoWindow = true,
+                    FileName = "cmd.exe",
+                    Arguments = $"/C {command}"
+                }
+            };
+            process.Start();
+            //process.WaitForExit();
+            if (process.HasExited)
+            {
                 output = process.StandardOutput.ReadToEnd();
-                process.WaitForExit();
-
+            }
             return output;
         }
     }

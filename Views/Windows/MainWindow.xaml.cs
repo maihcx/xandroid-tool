@@ -42,12 +42,14 @@ namespace XAndroid_Tool.Views.Windows
 
             this.SourceInitialized += OnSourceInitialized;
 
-            ViewModel.OnNavigatedTo();
+            SharedVariable.GlobalSnackbar = snackbarService;
         }
 
         private void OnSourceInitialized(object? sender, EventArgs e)
         {
             Wpf.Ui.Appearance.Theme.Apply(ThemeManagerService.GetSysApplicationTheme(), ThemeManagerService.GetBackdropType(), true);
+
+            ViewModel.OnNavigatedTo();
 
             //ThemeManagerService.OnThemeChanged += (theme) =>
             //{

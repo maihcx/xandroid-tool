@@ -20,7 +20,8 @@
     ScrollViewer.CanContentScroll="False"
     mc:Ignorable="d">
 
-    <Grid>
-        
-    </Grid>
+    <controls:GalleryNavigationPresenter
+        Margin="0"
+        Padding="0"
+        ItemsSource="{Binding ViewModel.NavigationCards, Mode=OneWay}" />
 </Page>

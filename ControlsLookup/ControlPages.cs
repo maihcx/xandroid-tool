@@ -14,7 +14,7 @@ static class ControlPages
     public static IEnumerable<GalleryPage> All()
     {
         foreach (
-            var type in GalleryAssembly
+            var type in MainAssembly
                 .Asssembly
                 .GetTypes()
                 .Where(t => t.IsDefined(typeof(GalleryPageAttribute)))

@@ -190,3 +190,16 @@ D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Controls\GalleryNavigationP
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Controls\PageControlDocumentation.baml
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\AndroidTools\AndroidToolsPage.baml
 D:\Dev\C# WPF\XAndroid_Tool\obj\Debug\net7.0-windows\Views\Pages\AndroidTools\OverlayToolPage.baml
+D:\DEV\C#\bin\Debug\net7.0-windows\DotNetZip.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\Microsoft.Extensions.Diagnostics.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\System.CodeDom.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\System.Diagnostics.EventLog.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\System.Management.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\System.Text.Encodings.Web.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\System.Text.Json.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\DEV\C#\bin\Debug\net7.0-windows\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
