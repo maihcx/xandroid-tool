@@ -12,7 +12,9 @@
       }
     ],
     "configProperties": {
-      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+      "System.Runtime.TieredCompilation": false,
+      "System.Runtime.TieredCompilation.QuickJit": false
     }
   }
 }

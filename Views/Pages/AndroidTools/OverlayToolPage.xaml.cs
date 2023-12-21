@@ -1,27 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows.Controls;
+using Wpf.Ui.Common;
+using XAndroid_Tool.ControlsLookup;
+using XAndroid_Tool.ViewModels.Pages.AndroidTools;
 
 namespace XAndroid_Tool.Views.Pages.AndroidTools
 {
-    /// <summary>
-    /// Interaction logic for OverlayToolPage.xaml
+    [GalleryPage("Overlay Tool", "Extract string resources from APK.", SymbolRegular.DeveloperBoardSearch20)]
     /// </summary>
-    public partial class OverlayToolPage : Page
+    public partial class OverlayToolPage : INavigableView<OverlayToolViewModel>
     {
-        public OverlayToolPage()
+        public OverlayToolViewModel ViewModel { get; }
+        public OverlayToolPage(OverlayToolViewModel viewModel)
         {
+            ViewModel = viewModel;
+            DataContext = this;
+
             InitializeComponent();
         }
     }

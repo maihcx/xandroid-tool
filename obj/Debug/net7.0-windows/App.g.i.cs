@@ -75,7 +75,7 @@ namespace XAndroid_Tool {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/XAndroid Tool;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XAndroid Tool;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -91,6 +91,8 @@ namespace XAndroid_Tool {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.0.0")]
         public static void Main() {
+            SplashScreen splashScreen = new SplashScreen("splash.png");
+            splashScreen.Show(true);
             XAndroid_Tool.App app = new XAndroid_Tool.App();
             app.InitializeComponent();
             app.Run();

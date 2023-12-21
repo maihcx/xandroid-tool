@@ -25,7 +25,7 @@ static class ControlPages
             if (galleryPageAttribute is not null)
             {
                 yield return new GalleryPage(
-                    type.Name.Substring(0, type.Name.LastIndexOf(PageSuffix)),
+                    galleryPageAttribute.Name ?? type.Name.Substring(0, type.Name.LastIndexOf(PageSuffix)),
                     galleryPageAttribute.Description,
                     galleryPageAttribute.Icon,
                     type

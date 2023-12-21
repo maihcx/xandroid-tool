@@ -8,6 +8,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+	<PublishSingleFile>true</PublishSingleFile>
+	<TieredCompilationQuickJit>false</TieredCompilationQuickJit>
+	<TieredCompilation>false</TieredCompilation>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,11 +28,16 @@
   <ItemGroup>
     <None Remove="Assets\wpfui-icon-256.png" />
     <None Remove="Assets\wpfui-icon-1024.png" />
+    <None Remove="splash.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\wpfui-icon-256.png" />
     <Resource Include="Assets\wpfui-icon-1024.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="splash.png" />
   </ItemGroup>
 
   <ItemGroup>

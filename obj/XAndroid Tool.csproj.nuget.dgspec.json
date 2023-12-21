@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DEV\\C#\\XAndroid Tool.csproj": {}
+    "D:\\DEV\\C#DOTNET\\xandroid-tool\\XAndroid Tool.csproj": {}
   },
   "projects": {
-    "D:\\DEV\\C#\\XAndroid Tool.csproj": {
+    "D:\\DEV\\C#DOTNET\\xandroid-tool\\XAndroid Tool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DEV\\C#\\XAndroid Tool.csproj",
+        "projectUniqueName": "D:\\DEV\\C#DOTNET\\xandroid-tool\\XAndroid Tool.csproj",
         "projectName": "XAndroid Tool",
-        "projectPath": "D:\\DEV\\C#\\XAndroid Tool.csproj",
+        "projectPath": "D:\\DEV\\C#DOTNET\\xandroid-tool\\XAndroid Tool.csproj",
         "packagesPath": "C:\\Users\\huynh\\.nuget\\packages\\",
-        "outputPath": "D:\\DEV\\C#\\obj\\",
+        "outputPath": "D:\\DEV\\C#DOTNET\\xandroid-tool\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,6 +61,18 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
             },
             "System.Management": {
               "target": "Package",

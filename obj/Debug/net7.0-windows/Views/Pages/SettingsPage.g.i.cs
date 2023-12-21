@@ -75,7 +75,7 @@ namespace XAndroid_Tool.Views.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XAndroid Tool;component/views/pages/settingspage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XAndroid Tool;V1.0.0.0;component/views/pages/settingspage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Pages\SettingsPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

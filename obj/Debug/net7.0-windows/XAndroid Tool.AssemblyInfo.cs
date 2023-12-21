@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XAndroid Tool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d633dcc199a4ef48141e90d23c3a847c5ee8b4d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("XAndroid Tool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XAndroid Tool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

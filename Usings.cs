@@ -4,6 +4,8 @@ global using System;
 global using System.Windows;
 global using Wpf.Ui.Contracts;
 global using Wpf.Ui.Services;
+global using Wpf.Ui.Controls;
 global using System.IO;
 global using System.Reflection;
 global using System.Management;
+

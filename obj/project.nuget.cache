@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zo2FHYRP8IgBxbOsCv6IDM1EPubzKQRBA66GKYzDcieXTNpUVfYAFN7BlJw7w55u3xtyNfIQlVv+vOeS2JXJIg==",
+  "dgSpecHash": "uzRGkdl0dtKqjo3x2aehZZQyqVk3UPpCAh081lkgbfmIP2trAtCXC4EmSxjJaEWDm9Rhm0eYvr1uJLGLIJekYg==",
   "success": true,
-  "projectFilePath": "D:\\DEV\\C#\\XAndroid Tool.csproj",
+  "projectFilePath": "D:\\DEV\\C#DOTNET\\xandroid-tool\\XAndroid Tool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huynh\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\huynh\\.nuget\\packages\\dotnetzip\\1.16.0\\dotnetzip.1.16.0.nupkg.sha512",
@@ -33,6 +33,8 @@
     "C:\\Users\\huynh\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\huynh\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\huynh\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\huynh\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\huynh\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Users\\huynh\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.1\\microsoft.netcore.platforms.3.1.1.nupkg.sha512",
     "C:\\Users\\huynh\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\huynh\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",

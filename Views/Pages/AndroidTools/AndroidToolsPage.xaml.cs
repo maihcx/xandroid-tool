@@ -1,5 +1,4 @@
-﻿using Wpf.Ui.Controls;
-using XAndroid_Tool.ViewModels.Pages.AndroidTools;
+﻿using XAndroid_Tool.ViewModels.Pages.AndroidTools;
 
 namespace XAndroid_Tool.Views.Pages.AndroidTools
 {

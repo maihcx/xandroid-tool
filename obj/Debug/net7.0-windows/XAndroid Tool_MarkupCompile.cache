@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\DEV\C#\App.xaml
 7-1144403347
 1282391436
-631179493246
+64-672462019
 230774575533
 Controls\GalleryNavigationPresenter.xaml;Controls\PageControlDocumentation.xaml;Views\Pages\AndroidTools\AndroidToolsPage.xaml;Views\Pages\AndroidTools\OverlayToolPage.xaml;Views\Pages\DashboardPage.xaml;Views\Pages\SettingsPage.xaml;Views\Windows\MainWindow.xaml;
-
+splash.png
 False
 

@@ -91,6 +91,8 @@ namespace XAndroid_Tool {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "8.0.0.0")]
         public static void Main() {
+            SplashScreen splashScreen = new SplashScreen("splash.png");
+            splashScreen.Show(true);
             XAndroid_Tool.App app = new XAndroid_Tool.App();
             app.InitializeComponent();
             app.Run();
