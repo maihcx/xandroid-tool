@@ -2,3 +2,4 @@
 *.pdb
 *.manifest
 *.cache
+.vs/
