@@ -11,9 +11,22 @@
 	<PublishSingleFile>true</PublishSingleFile>
 	<TieredCompilationQuickJit>false</TieredCompilationQuickJit>
 	<TieredCompilation>false</TieredCompilation>
+	<RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+	  <Authors>HUYNH MAI</Authors>
+	  <Company>$(Authors) SOFT</Company>
+<!--<PublishReadyToRun>true</PublishReadyToRun>-->
   </PropertyGroup>
-
-  <ItemGroup>
+	<!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<Optimize>True</Optimize>
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+	</PropertyGroup>-->
+	
+	<ItemGroup>
     <Content Include="wpfui-icon.ico" />
   </ItemGroup>
 

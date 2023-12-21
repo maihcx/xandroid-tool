@@ -3,6 +3,8 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 
+using System.Diagnostics;
+
 namespace XAndroid_Tool;
 
 class MainAssembly
@@ -13,7 +15,7 @@ class MainAssembly
     public static string TEMP_PATH { get; set; }
     public static string TEMP_MAIN { get; set; }
     public static string LOCAL_APPDATA_PATH { get { return Environment.GetEnvironmentVariable("LocalAppData"); } }
-    public static string APP_PATH { get { return Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); } }
+    public static string APP_PATH { get { return Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName); } }
     public static string RES_PATH { get { return Path.Combine(APP_PATH, "Resources"); } }
     public static string APKTOOL_PATH { get { return Path.Combine(RES_PATH, "apktool.jar"); } }
     public static string APKSIGNER_PATH { get { return Path.Combine(RES_PATH, "apksigner.jar"); } }

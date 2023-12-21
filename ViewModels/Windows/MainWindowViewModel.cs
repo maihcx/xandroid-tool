@@ -4,6 +4,7 @@
 // All Rights Reserved.
 
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using Wpf.Ui.Common;
 using Wpf.Ui.Controls;
 using XAndroid_Tool.Lib.ApkTool;
@@ -26,33 +27,39 @@ namespace XAndroid_Tool.ViewModels.Windows
         private async void InitializeViewModel()
         {
             _isInitialized = true;
-
-            Func<Task> asyncVoid = async () =>
+            try
             {
-                Apktool apktool = new Apktool(JavaUtils.GetJavaPath(), MainAssembly.APKTOOL_PATH);
-                string javaVersion = apktool.GetJavaVersion();
-                string apktoolVersion = apktool.GetVersion();
-                if (javaVersion == string.Empty)
+                var asyncVoid = async () =>
                 {
-                    MessengerService.ShowSnackbar("Error", "Missing java, please install java 8 to continues", ControlAppearance.Danger, TimeSpan.FromSeconds(15));
-                }
-                else
-                {
-                    ControlAppearance controlAppearance = ControlAppearance.Success;
-                    if (apktoolVersion == string.Empty)
+                    Apktool apktool = new Apktool(JavaUtils.GetJavaPath(), MainAssembly.APKTOOL_PATH);
+                    string javaVersion = apktool.GetJavaVersion();
+                    string apktoolVersion = apktool.GetVersion();
+                    if (javaVersion == string.Empty)
                     {
-                        controlAppearance = ControlAppearance.Caution;
-                        apktoolVersion = "MISSING APKTOOL, PLEASE INSTALL APK TOOL!!!";
+                        MessengerService.ShowSnackbar("Error", "Missing java, please install java 8 to continues", ControlAppearance.Danger, TimeSpan.FromSeconds(15));
                     }
                     else
                     {
-                        apktoolVersion = $"Version: {apktoolVersion}";
+                        ControlAppearance controlAppearance = ControlAppearance.Success;
+                        if (apktoolVersion == string.Empty)
+                        {
+                            controlAppearance = ControlAppearance.Caution;
+                            apktoolVersion = $"MISSING APKTOOL, PLEASE INSTALL APK TOOL!!!\nLOCATION: {MainAssembly.RES_PATH}";
+                        }
+                        else
+                        {
+                            apktoolVersion = $"Version: {apktoolVersion}";
+                        }
+                        MessengerService.ShowSnackbar("System Info", $"JAVA:\n{javaVersion}\n\n APKTOOL:\n{apktoolVersion}", controlAppearance, TimeSpan.FromSeconds(15));
                     }
-                    MessengerService.ShowSnackbar("System Info", $"JAVA:\n{javaVersion}\n\n APKTOOL:\n{apktoolVersion}", controlAppearance, TimeSpan.FromSeconds(15));
-                }
-            };
+                };
 
-            asyncVoid();
+                asyncVoid();
+            }
+            catch (Exception ex)
+            {
+                MessengerService.ShowSnackbar("System Internal Error", ex.ToString(), ControlAppearance.Danger, TimeSpan.FromSeconds(15));
+            }
         }
 
         [ObservableProperty]
