@@ -55,9 +55,9 @@
             Margin="50,0,0,0"
             Padding="0"
             CloseWindowByDoubleClickOnIcon="True">
-            <!--<ui:TitleBar.Icon>
-                <ui:ImageIcon Source="pack://application:,,,/Assets/wpfui-icon-256.png" />
-            </ui:TitleBar.Icon>-->
+            <ui:TitleBar.Icon>
+                <ui:ImageIcon Source="pack://application:,,,/Assets/XAndroid_tool_logo_icon.png" />
+            </ui:TitleBar.Icon>
         </ui:TitleBar>
 
         <ui:SnackbarPresenter x:Name="GlobalSnackbar" />
