@@ -200,16 +200,20 @@ namespace XAndroid_Tool.Lib.ApkTool
         {
             switch (sdk)
             {
+                case "35":
+                    return "35: Android 15 (Vanilla Ice Cream)";
+                case "34":
+                    return "34: Android 14 (Upside Down Cake)";
                 case "33":
-                    return "31: Android 13";
+                    return "33: Android 13 (Tiramisu)";
                 case "32":
-                    return "31: Android 12.0L";
+                    return "32: Android 12L (Snow Cone v2)";
                 case "31":
-                    return "31: Android 12";
+                    return "31: Android 12 (Snow Cone)";
                 case "30":
-                    return "30: Android 11";
+                    return "30: Android 11 (Red Velvet Cake)";
                 case "29":
-                    return "29: Android 10";
+                    return "29: Android 10 (Quince Tart)";
                 case "28":
                     return "28: Android 9 (Pie)";
                 case "27":
