@@ -45,7 +45,7 @@ public class GalleryNavigationPresenter : System.Windows.Controls.Control
     /// </summary>
     public GalleryNavigationPresenter()
     {
-        SetValue(TemplateButtonCommandProperty, new RelayCommand<Type>(o => OnTemplateButtonClick(o)));
+        SetValue(TemplateButtonCommandProperty, new Wpf.Ui.Common.RelayCommand<Type>(o => OnTemplateButtonClick(o)));
     }
 
     private void OnTemplateButtonClick(Type? pageType)

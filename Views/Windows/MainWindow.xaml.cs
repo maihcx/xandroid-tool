@@ -3,6 +3,7 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 
+using Wpf.Ui.Appearance;
 using Wpf.Ui.Controls;
 using XAndroid_Tool.Resources;
 using XAndroid_Tool.Services;
@@ -47,7 +48,7 @@ namespace XAndroid_Tool.Views.Windows
 
         private void OnSourceInitialized(object? sender, EventArgs e)
         {
-            Wpf.Ui.Appearance.Theme.Apply(ThemeManagerService.GetSysApplicationTheme(), ThemeManagerService.GetBackdropType(), true);
+            Theme.Apply(ThemeManagerService.GetSysApplicationTheme(), ThemeManagerService.GetBackdropType(), true);
 
             ViewModel.OnNavigatedTo();
 

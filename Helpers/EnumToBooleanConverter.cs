@@ -5,6 +5,7 @@
 
 using System.Globalization;
 using System.Windows.Data;
+using Wpf.Ui.Appearance;
 using static XAndroid_Tool.Resources.ThemeConfigs;
 
 namespace XAndroid_Tool.Helpers
@@ -46,7 +47,7 @@ namespace XAndroid_Tool.Helpers
                 throw new ArgumentException("ExceptionEnumToBooleanConverterParameterMustBeAnEnumName");
             }
 
-            return Enum.Parse(typeof(Wpf.Ui.Appearance.ThemeType), enumString);
+            return Enum.Parse(typeof(ThemeType), enumString);
         }
     }
 }

@@ -5,7 +5,7 @@
 
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using Wpf.Ui.Common;
+//using Wpf.Ui.Common;
 using Wpf.Ui.Controls;
 using XAndroid_Tool.Lib.ApkTool;
 using XAndroid_Tool.Lib.Java;
@@ -75,7 +75,8 @@ namespace XAndroid_Tool.ViewModels.Windows
                 {
                     new NavigationViewItem("Overlay Tool", SymbolRegular.DeveloperBoardSearch20, typeof(OverlayToolPage)),
                 }
-            }
+            },
+            new NavigationViewItem("Framework", SymbolRegular.WindowDevEdit20, typeof(FrameworkPage))
         };
 
         [ObservableProperty]

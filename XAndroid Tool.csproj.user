@@ -24,8 +24,14 @@
     <Compile Update="Views\Pages\AndroidTools\OverlayToolPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Pages\FrameworkPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Controls\ControlGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Controls\GalleryNavigationPresenter.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -39,6 +45,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Pages\DashboardPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\FrameworkPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Pages\SettingsPage.xaml">
