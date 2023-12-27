@@ -189,9 +189,9 @@ public class PageControlDocumentation : Control
 
     private static void SwitchThemes()
     {
-        var currentTheme = Theme.GetAppTheme();
+        var currentTheme = ApplicationThemeManager.GetAppTheme();
 
-        Theme.Apply(
+        ApplicationThemeManager.Apply(
                 currentTheme == ThemeType.Light
                     ? ThemeType.Dark
                     : ThemeType.Light

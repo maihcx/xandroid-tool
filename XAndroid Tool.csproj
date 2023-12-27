@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>XAndroid_tool_logo_icon.ico</ApplicationIcon>
     <Nullable>enable</Nullable>
@@ -15,6 +15,7 @@
 	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
 	  <Authors>HUYNH MAI</Authors>
 	  <Company>$(Authors) SOFT</Company>
+	  <StartupObject>XAndroid_Tool.App</StartupObject>
 <!--<PublishReadyToRun>true</PublishReadyToRun>-->
   </PropertyGroup>
 	<!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -35,7 +36,7 @@
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
     <PackageReference Include="DotNetZip" Version="1.16.0" />
     <PackageReference Include="System.Management" Version="8.0.0" />
-    <PackageReference Include="WPF-UI" Version="3.0.0-preview.4" />
+    <PackageReference Include="WPF-UI" Version="3.0.0-preview.9" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
   </ItemGroup>
 

@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Wpf.Ui.Controls;
+﻿using Wpf.Ui.Controls;
 using XAndroid_Tool.Resources;
-using Wpf.Ui.Appearance;
 using static XAndroid_Tool.Resources.ThemeConfigs;
-using System.Windows.Controls.Primitives;
-using System.Windows.Input;
 
 namespace XAndroid_Tool.Services
 {
@@ -26,28 +18,31 @@ namespace XAndroid_Tool.Services
 
         public event ThemeChangedHandle OnThemeChanged;
 
-        private ThemeType ApplicationSysTheme = ThemeType.Unknown;
+        public bool IsWatcher {  get; set; }
 
         public ApplicationThemeManagerService()
         {
-            Theme.Changed += (ThemeType currentTheme, System.Windows.Media.Color systemAccent) =>
-            {
-                if (Theme.IsMatchedDark() || (!Theme.IsMatchedLight() && currentTheme == ThemeType.Light))
-                {
-                    ApplicationSysTheme = ThemeType.Dark;
-                }
-                else if (Theme.IsMatchedLight() || (!Theme.IsMatchedDark() && currentTheme == ThemeType.Dark))
-                {
-                    ApplicationSysTheme = ThemeType.Light;
-                }
-            };
+            //ApplicationThemeManager.Changed += (ThemeType currentTheme, System.Windows.Media.Color systemAccent) =>
+            //{
+                //ThemeType themeType = Wpf.Ui.Appearance.ApplicationThemeManager.GetAppTheme();
+                //ApplicationSysTheme = themeService.GetTheme();
+
+                //if (ApplicationThemeManager.IsMatchedDark() || (!ApplicationThemeManager.IsMatchedLight() && currentTheme == ThemeType.Light))
+                //{
+                //    ApplicationSysTheme = ThemeType.Dark;
+                //}
+                //else if (ApplicationThemeManager.IsMatchedLight() || (!ApplicationThemeManager.IsMatchedDark() && currentTheme == ThemeType.Dark))
+                //{
+                //    ApplicationSysTheme = ThemeType.Light;
+                //}
+            //};
         }
 
         public void SetBackdropType(WindowBackdropType _WindowBackdropType)
         {
             UserDataStored.SetValue("IWindowBackdropType", _WindowBackdropType.ToString());
 
-            Wpf.Ui.Appearance.Theme.Apply(GetSysApplicationTheme(), _WindowBackdropType, true);
+            ThemeApply(GetSysApplicationTheme(), _WindowBackdropType);
         }
 
         public IThemeType GetApplicationTheme()
@@ -67,12 +62,11 @@ namespace XAndroid_Tool.Services
 
         public ThemeType GetSysApplicationTheme()
         {
-            ThemeType _ThemeType;
-            Wpf.Ui.Appearance.Watcher.UnWatch();
+            ThemeType _ThemeType = ThemeType.Unknown;
             if (UserDataStored.GetValue("IThemeType") == "Auto")
             {
-                _ThemeType = ApplicationSysTheme;
-                Wpf.Ui.Appearance.Watcher.Watch(SharedVariable.MainWindow, GetBackdropType(), true);
+                ApplicationThemeManager.ApplySystemTheme();
+                _ThemeType = ApplicationThemeManager.GetAppTheme();
             }
             else
             {
@@ -87,17 +81,46 @@ namespace XAndroid_Tool.Services
 
         public void SetApplicationTheme(IThemeType _IThemeType) 
         { 
+            if (GetApplicationTheme() == _IThemeType) return;
+
+            UnWatch();
             UserDataStored.SetValue("IThemeType", _IThemeType.ToString());
-            string valS = _IThemeType.ToString();
+            ThemeType applicationTheme = GetSysApplicationTheme();
+            WindowBackdropType windowBackdropType = GetBackdropType();
+
             if (_IThemeType == IThemeType.Auto)
             {
-                Wpf.Ui.Appearance.Watcher.Watch(SharedVariable.MainWindow, GetBackdropType(), true);
+                Watch(applicationTheme, windowBackdropType, true);
             }
             else
             {
-                Wpf.Ui.Appearance.Theme.Apply(GetSysApplicationTheme(), GetBackdropType(), true);
+                ThemeApply(applicationTheme, windowBackdropType);
             }
-            OnThemeChanged?.Invoke(this.GetSysApplicationTheme());
+            OnThemeChanged?.Invoke(applicationTheme);
+        }
+
+        public void Watch(ThemeType applicationTheme = ThemeType.Unknown, WindowBackdropType windowBackdrop = WindowBackdropType.Mica, bool updateAccents = true, bool forceBackgroundReplace = false)
+        {
+            if (!IsWatcher)
+            {
+                ThemeApply(applicationTheme, windowBackdrop);
+                Watcher.Watch(SharedVariable.MainWindow, windowBackdrop, updateAccents, forceBackgroundReplace);
+                IsWatcher = true;
+            }
+        }
+
+        private void ThemeApply(ThemeType applicationTheme = ThemeType.Light, WindowBackdropType backgroundEffect = WindowBackdropType.Mica)
+        {
+            ApplicationThemeManager.Apply(applicationTheme, backgroundEffect, true, true);
+        }
+
+        public void UnWatch()
+        {
+            if (IsWatcher)
+            {
+                Watcher.UnWatch(SharedVariable.MainWindow);
+                IsWatcher = false;
+            }
         }
     }
 }

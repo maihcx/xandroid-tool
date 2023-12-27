@@ -33,6 +33,7 @@ namespace XAndroid_Tool.Views.Windows
             SharedVariable.ThemeManagerService = ThemeManagerService;
             DataContext = this;
 
+            ThemeManagerService.Watch();
             InitializeComponent();
 
             navigationService.SetNavigationControl(NavigationView);
@@ -48,8 +49,8 @@ namespace XAndroid_Tool.Views.Windows
 
         private void OnSourceInitialized(object? sender, EventArgs e)
         {
-            Theme.Apply(ThemeManagerService.GetSysApplicationTheme(), ThemeManagerService.GetBackdropType(), true);
 
+            ApplicationThemeManager.Apply(ThemeManagerService.GetSysApplicationTheme(), ThemeManagerService.GetBackdropType(), true);
             ViewModel.OnNavigatedTo();
 
             //ThemeManagerService.OnThemeChanged += (theme) =>
