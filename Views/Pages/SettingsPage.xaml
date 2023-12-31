@@ -17,7 +17,7 @@
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     mc:Ignorable="d">
     <Page.Resources>
-        <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+        <helpers:BooleanToString x:Key="BooleanToString" />
     </Page.Resources>
 
     <StackPanel>
@@ -46,11 +46,18 @@
             </ComboBox>
         </StackPanel>
 
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,10,0,0">
+            <CheckBox Content="Auto Show/Hide Navtigation panel" 
+                      IsChecked="{Binding ViewModel.AutoHideNavigationPanel}" 
+                      Command="{Binding ViewModel.ChangeAutoHideNavPanelCommand, Mode=OneWay}" 
+                      CommandParameter="{Binding ViewModel.AutoHideNavigationPanel, Converter={StaticResource BooleanToString}, Mode=OneWay}"/>
+        </StackPanel>
+
         <TextBlock
             Margin="0,24,0,0"
             FontSize="20"
             FontWeight="Medium"
-            Text="About XAndroid_Tool" />
+            Text="About XAndroid Tool" />
         <TextBlock Margin="0,12,0,0" Text="{Binding ViewModel.AppVersion, Mode=OneWay}" />
     </StackPanel>
 </Page>

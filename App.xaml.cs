@@ -14,8 +14,10 @@ using XAndroid_Tool.DependencyModel;
 using XAndroid_Tool.Services;
 using XAndroid_Tool.Services.Contracts;
 using XAndroid_Tool.ViewModels.Pages;
+using XAndroid_Tool.ViewModels.Pages.AndroidTools;
 using XAndroid_Tool.ViewModels.Windows;
 using XAndroid_Tool.Views.Pages;
+using XAndroid_Tool.Views.Pages.AndroidTools;
 using XAndroid_Tool.Views.Windows;
 
 namespace XAndroid_Tool
@@ -54,6 +56,10 @@ namespace XAndroid_Tool
                 services.AddSingleton<DashboardViewModel>();
                 services.AddSingleton<SettingsPage>();
                 services.AddSingleton<SettingsViewModel>();
+                services.AddSingleton<FrameworkPage>();
+                services.AddSingleton<FrameworkViewModel>();
+                services.AddSingleton<AndroidToolsPage>();
+                services.AddSingleton<AndroidToolsViewModel>();
 
                 // All other pages and view models
                 services.AddTransientFromNamespace("XAndroid_Tool.Views", MainAssembly.Asssembly);
@@ -88,7 +94,9 @@ namespace XAndroid_Tool
         /// </summary>
         private void OnStartup(object sender, StartupEventArgs e)
         {
-            _host.Start();
+            var newSp = new SplashScreen("Assets/XAndroid_tool_logo_1.png");
+            newSp.Show(true);
+            _host.StartAsync();
         }
 
         /// <summary>

@@ -52,7 +52,7 @@
     <Resource Include="Assets\wpfui-icon-256.png" />
     <Resource Include="Assets\wpfui-icon-1024.png" />
     <Resource Include="Assets\XAndroid_tool_logo.png" />
-    <SplashScreen Include="Assets\XAndroid_tool_logo_1.png" />
+    <Resource Include="Assets\XAndroid_tool_logo_1.png" />
     <Resource Include="Assets\XAndroid_tool_logo_icon.png" />
   </ItemGroup>
 

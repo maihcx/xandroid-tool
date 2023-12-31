@@ -3,6 +3,7 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 
+using System.Diagnostics;
 using System.Windows.Data;
 using Wpf.Ui.Controls;
 using XAndroid_Tool.Resources;
@@ -29,6 +30,9 @@ namespace XAndroid_Tool.ViewModels.Pages
         [ObservableProperty]
         private CollectionView _themeList;
 
+        [ObservableProperty]
+        private bool _autoHideNavigationPanel;
+
         public void OnNavigatedTo()
         {
             if (!_isInitialized)
@@ -43,6 +47,8 @@ namespace XAndroid_Tool.ViewModels.Pages
             CurrentMaterial = ThemeManagerService.GetBackdropType();
             AppVersion = $"XAndroid Tool - {GetAssemblyVersion()}";
 
+            AutoHideNavigationPanel = SharedVariable.IsAutoHideNavPanel;
+
             _isInitialized = true;
 
             ThemeManagerService.OnThemeChanged += (theme) =>
@@ -55,6 +61,13 @@ namespace XAndroid_Tool.ViewModels.Pages
         {
             return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version?.ToString()
                 ?? String.Empty;
+        }
+
+        [RelayCommand]
+        public void OnChangeAutoHideNavPanel(string parameter)
+        {
+            SharedVariable.IsAutoHideNavPanel = AutoHideNavigationPanel = bool.Parse(parameter);
+
         }
 
         [RelayCommand]

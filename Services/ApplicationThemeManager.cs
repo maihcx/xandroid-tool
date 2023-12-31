@@ -90,7 +90,7 @@ namespace XAndroid_Tool.Services
 
             if (_IThemeType == IThemeType.Auto)
             {
-                Watch(applicationTheme, windowBackdropType, true);
+                Watch(applicationTheme, windowBackdropType);
             }
             else
             {
@@ -111,7 +111,7 @@ namespace XAndroid_Tool.Services
 
         private void ThemeApply(ThemeType applicationTheme = ThemeType.Light, WindowBackdropType backgroundEffect = WindowBackdropType.Mica)
         {
-            ApplicationThemeManager.Apply(applicationTheme, backgroundEffect, true, true);
+            ApplicationThemeManager.Apply(applicationTheme, backgroundEffect, true, false);
         }
 
         public void UnWatch()

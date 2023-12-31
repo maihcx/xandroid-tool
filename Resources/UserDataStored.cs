@@ -13,12 +13,50 @@ namespace XAndroid_Tool.Resources
             return Properties.Settings.Default[key].ToString() ?? string.Empty;
         }
 
+        public static bool GetValueBool(string key)
+        {
+            return Convert.ToBoolean(GetValue(key));
+        }
+
+        public static double GetValueDouble(string key)
+        {
+            return Convert.ToDouble(GetValue(key));
+        }
+
         public static bool SetValue(string key, string value)
         {
             try {
                 Properties.Settings.Default[key] = value;
                 Properties.Settings.Default.Save();
                 return true; 
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static bool SetValue(string key, bool value)
+        {
+            try
+            {
+                Properties.Settings.Default[key] = value;
+                Properties.Settings.Default.Save();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static bool SetValue(string key, double value)
+        {
+            try
+            {
+                Properties.Settings.Default[key] = value;
+                Properties.Settings.Default.Save();
+                return true;
             }
             catch
             {

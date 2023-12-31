@@ -46,5 +46,89 @@ namespace XAndroid_Tool.Properties {
                 this["IThemeType"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double Window_Top {
+            get {
+                return ((double)(this["Window_Top"]));
+            }
+            set {
+                this["Window_Top"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double Window_Left {
+            get {
+                return ((double)(this["Window_Left"]));
+            }
+            set {
+                this["Window_Left"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("500")]
+        public double Window_Width {
+            get {
+                return ((double)(this["Window_Width"]));
+            }
+            set {
+                this["Window_Width"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("350")]
+        public double Window_Height {
+            get {
+                return ((double)(this["Window_Height"]));
+            }
+            set {
+                this["Window_Height"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IsWindow_Maximized {
+            get {
+                return ((bool)(this["IsWindow_Maximized"]));
+            }
+            set {
+                this["IsWindow_Maximized"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("xv1")]
+        public string StartUpCode {
+            get {
+                return ((string)(this["StartUpCode"]));
+            }
+            set {
+                this["StartUpCode"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool IsAutoHideNavPanel {
+            get {
+                return ((bool)(this["IsAutoHideNavPanel"]));
+            }
+            set {
+                this["IsAutoHideNavPanel"] = value;
+            }
+        }
     }
 }
